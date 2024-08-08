@@ -1,0 +1,59 @@
+body{
+   
+    height: 3000px;
+  }
+  .container{
+    color: transparent;
+  }
+.slider{
+  margin-top: 30px;
+  height: 500px;
+}
+.first_poster_text{
+  /* color: rgb(249, 251, 247); */
+  font-size: 25px;
+  font-weight: bold;
+color: transparent;
+font-family: "Anton", sans-serif;
+
+}
+.back{
+background-image: url(https://wallpapers.com/images/hd/old-beaten-indian-flag-go8hkn52v6whyc4h.jpg);
+background-size: cover; 
+background-clip: text;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+
+}
+.h1{
+color: black;
+}
+.name{
+font-size: 25px;
+font-weight: bold;
+color: rgb(238, 157, 8);
+}
+.info {
+width: 100%;
+margin-bottom: 15px;
+border-bottom: 1px solid gray;
+}
+.info > .heading{
+margin: 0px;
+text-align: center;
+width: 100%;
+/* border: 1px solid black; */
+margin-bottom: 10px;
+}
+.info > .para{
+  margin: 0px;
+  margin-bottom: 25px;
+  }
+
+.info > .sinature {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
