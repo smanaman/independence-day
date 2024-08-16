@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,98 +18,103 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
-<style>
 
-
-</style>
 
 <body>
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
-                alt="" width="40px" height="30px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">contect</a>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark"">
+          <div class=" container-fluid">
+          <a class="navbar-brand" href="#"><img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+              alt="" width="40px" height="30px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>   
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index2.html">contect</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
           </div>
-        </nav>
       </div>
-      <div class="col-12">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide slider">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <img src="https://d2aq6dqxahe4ka.cloudfront.net/assets/uploads/challenges/76091687254.jpg"
-                class="d-block w-100" alt="..." height="470px">
-              <div class="carousel-caption d-none d-md-block back">
+      </nav>
+    </div>
+    <div class="col-12">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide slider">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img class="slider-img"
+              src="https://d2aq6dqxahe4ka.cloudfront.net/assets/uploads/challenges/76091687254.jpg"
+              class="d-block w-100" alt="..." height="470px">
+            <!-- <div class="carousel-caption d-none d-md-block back">
                 <h5 class="first_poster_text">First time wiving flage</h5>
                 <p class="first_poster_text">Some representative placeholder content for the first slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="https://images.moneycontrol.com/static-mcnews/2021/08/Freedom-Struggle-Resize-4.jpg"
-                class="d-block w-100" alt="..." height="470px">
-              <div class="carousel-caption d-none d-md-block back">
+              </div> -->
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img class="slider-img"
+              src="https://images.moneycontrol.com/static-mcnews/2021/08/Freedom-Struggle-Resize-4.jpg"
+              class="d-block w-100" alt="..." height="470px">
+            <!-- <div class="carousel-caption d-none d-md-block back">
                 <h5 class="first_poster_text">Second slide label</h5>
                 <p class="first_poster_text">Some representative placeholder content for the second slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="https://www.hindustantimes.com/static/partition/assets/img/gallery/515302110.jpg"
-                class="d-block w-100" alt="..." height="470px">
-              <div class="carousel-caption d-none d-md-block back">
+              </div> -->
+          </div>
+          <div class="carousel-item">
+            <img class="slider-img"
+              src="https://www.hindustantimes.com/static/partition/assets/img/gallery/515302110.jpg"
+              class="d-block w-100" alt="..." height="470px">
+            <!-- <div class="carousel-caption d-none d-md-block back">
                 <h5 class="first_poster_text">Third slide label</h5>
                 <p class="first_poster_text">Some representative placeholder content for the third slide.</p>
               </div>
-            </div>
+            </div> -->
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
             data-bs-slide="prev">
@@ -119,558 +129,321 @@
         </div>
       </div>
     </div>
+
+
+    <!-- card section -->
+
     <div class="row">
-      <div class="col-6">
-        <h1 class="h1">our freedom fighters</h1>
-      </div>
-
-      <div class="col-12">
-        <div class="row">
-          <div class=" col-12 col-sm-6 col-md-3">
-            <div class="card" style="width: 18rem;">
-              <img
-                src="https://images.news18.com/ibnlive/uploads/2022/03/bhagat-singh-16480122274x3.png?impolicy=website&width=640&height=480"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text name">Bhaght singh</p>
-                <div class="accordion accordion-flush" id="accordionFlushExample1">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                       About
-                      </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#One">
-                      <div class="accordion-body">
-          
-                          <div class="about-bhaght-singh">
-                              <div class="info">
-                                <h4 class="heading">Born</h4>
-                                <p class="para"> 27 September 1907
-                                  Banga, Punjab, British India</p>
-                              </div>
-                              <div class="info">
-                                <h4 class="heading">Died</h4>
-                                <p class="para"> 23 March 1931 (aged 23)
-                                  Lahore Central Jail, Punjab, British India</p>
-                              </div>
-            
-                              <div class="info">
-                                <h4 class="heading">Other names</h4>
-                                <p class="para">	Shaheed-e-Azam</p>
-                              </div>
-                              <div class="info">
-                                <h4 class="heading">Cause of death	</h4>
-                                <p class="para">	Execution by hanging</p>
-                              </div>
-                              <div class="info">
-                                <h4 class="heading">Movement	</h4>
-                                <p class="para">	Indian independence movement</p>
-                              </div>
-                              <div class="info">
-                                <h4 class="heading">Assassination</h4>
-                                <p class="para"> John P. Saunders and Channan Singh</p>
-                              </div>
-                              <div class="info">
-                                <h4 class="heading">Signature</h4>
-                                <div class="sinature"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Bhagat-singh-signature.jpg" alt="">
-                                </div>
-                              </div>
-                            </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                          Accomplishment            </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#One">
-                      <div class="accordion-body">  Bhagat Singh (27 September 1907 – 23 March 1931) was an Indian anti-colonial
-                          revolutionary,who participated in the mistaken murder of a junior British police officer in
-                          December 1928 in what was to be retaliation for the death of an Indian nationalist. He later
-                          took part in a largely symbolic bombing of the Central Legislative Assembly in Delhi and a
-                          hunger strike in jail, which—on the back of sympathetic coverage in Indian-owned
-                          newspapers—turned him into a household name in the Punjab region, and after his execution at
-                          age 23 into a martyr and folk hero in Northern India. Borrowing ideas from Bolshevism and
-                          anarchism, the charismatic Singh electrified a growing militancy in India in the 1930s, and
-                          prompted urgent introspection within the Indian National Congress's nonviolent but eventually
-                          successful campaign for India's independence</div>
-                    </div>
-                  </div>
-                  
-                </div>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class=" col-12 col-sm-6 col-md-3">
-            <div class="card" style="width: 18rem;">
-              <img
-                src="https://mc-webpcache.readwhere.in/mcms.php?size=large&in=https://mcmscache.epapr.in/post_images/website_326/post_26480118/full.jpg"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text name">Netaji</p>
-           
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Accordion Item #1
-                      </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#Two">
-                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Accordion Item #2
-                      </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#Two">
-                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class=" col-12 col-sm-6 col-md-3">
-            <div class="card" style="width: 18rem;">
-              <img src="https://i.pinimg.com/originals/9b/38/67/9b3867d4ce499ab17e6070b7076c2843.jpg"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text name">Khudiram Bose</p>
-                <div class="accordion accordion-flush" id="accordionFlushExample1">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                       About
-                      </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#One">
-                      <div class="accordion-body">
-          
-                          <div class="about-bhaght-singh">
-                              <div class="info">
-                                <h4 class="heading">Born</h4>
-                                <p class="para"> 27 September 1907
-                                  Banga, Punjab, British India</p>
-                              </div>
-                              <div class="info">
-                                <h4 class="heading">Died</h4>
-                                <p class="para"> 23 March 1931 (aged 23)
-                                  Lahore Central Jail, Punjab, British India</p>
-                              </div>
-            
-                              <div class="info">
-                                <h4 class="heading">Other names</h4>
-                                <p class="para">	Shaheed-e-Azam</p>
-                              </div>
-                              <div class="info">
-                                <h4 class="heading">Cause of death	</h4>
-                                <p class="para">	Execution by hanging</p>
-                              </div>
-                              <div class="info">
-                                <h4 class="heading">Movement	</h4>
-                                <p class="para">	Indian independence movement</p>
-                              </div>
-                              <div class="info">
-                                <h4 class="heading">Assassination</h4>
-                                <p class="para"> John P. Saunders and Channan Singh</p>
-                              </div>
-                              <div class="info">
-                                <h4 class="heading">Signature</h4>
-                                <div class="sinature"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Bhagat-singh-signature.jpg" alt="">
-                                </div>
-                              </div>
-                            </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                          Accomplishment            </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#One">
-                      <div class="accordion-body">  
-                        Khudiram Bose (also spelled Khudiram/Khudiram Basu) (3 December 1889 – 11 August 1908) was an Indian
-                          nationalist from Bengal Presidency who opposed British rule of India. For his role in the Muzaffarpur
-                          Conspiracy Case, along with Prafulla Chaki, he was sentenced to death, for the attempted assassination
-                          of a British judge, Magistrate Douglas Kingsford, by throwing bombs on the carriage they suspected the
-                          man was in. Magistrate Kingsford, however, was seated in a different carriage, and the throwing of
-                          bombs resulted in the deaths of two British women. Prafulla fatally shot himself before the arrest.
-                          Khudiram was arrested and trialed for the murder of the two women, ultimately being sentenced to
-                          death. He was one of the first Indian revolutionaries in Bengal to be executed by the British.</div>
-                    </div>
-                  </div>
-                  
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          <div class=" col-12 col-sm-6 col-md-3">
-            <div class="card" style="width: 18rem;">
-              <img
-                src="https://static.abplive.com/wp-content/uploads/2018/07/23091131/prabhu.jpg?impolicy=abp_cdn&imwidth=1200"
-                class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text name">Balraj</p>
-                <div class="accordion accordion-flush" id="accordionFlushExample1">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                       About
-                      </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#One">
-                      <div class="accordion-body">
-          
-                          <div class="about-bhaght-singh">
-                              <div class="info">
-                                <h4 class="heading">Born</h4>
-                                <p class="para"> 27 September 1907
-                                  Banga, Punjab, British India</p>
-                              </div>
-                              <div class="info">
-                                <h4 class="heading">Died</h4>
-                                <p class="para"> 23 March 1931 (aged 23)
-                                  Lahore Central Jail, Punjab, British India</p>
-                              </div>
-            
-                              <div class="info">
-                                <h4 class="heading">Other names</h4>
-                                <p class="para">	Shaheed-e-Azam</p>
-                              </div>
-                              <div class="info">
-                                <h4 class="heading">Cause of death	</h4>
-                                <p class="para">	Execution by hanging</p>
-                              </div>
-                              <div class="info">
-                                <h4 class="heading">Movement	</h4>
-                                <p class="para">	Indian independence movement</p>
-                              </div>
-                              <div class="info">
-                                <h4 class="heading">Assassination</h4>
-                                <p class="para"> John P. Saunders and Channan Singh</p>
-                              </div>
-                              <div class="info">
-                                <h4 class="heading">Signature</h4>
-                                <div class="sinature"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Bhagat-singh-signature.jpg" alt="">
-                                </div>
-                              </div>
-                            </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                          Accomplishment            </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#One">
-                      <div class="accordion-body">  
-                        Chandra Shekhar Sitaram Tiwari ( 23 July 1906 – 27 February 1931), popularly known as Chandra Shekhar
-                        Azad, was an Indian revolutionary who reorganised the Hindustan Republican Association (HRA) under its
-                        new name of Hindustan Socialist Republican Association (HSRA) after the death of its founder, Ram
-                        Prasad Bismil, and three other prominent party leaders, Roshan Singh, Rajendra Nath Lahiri and
-                        Ashfaqulla Khan. He hailed from Bardarka village in Unnao district of United Provinces and his parents
-                        were Sitaram Tiwari and Jagrani Devi. He often used the pseudonym "Balraj" while signing pamphlets
-                        issued as the commander-in-chief of the HSRA.</div>
-                    </div>
-                  </div>
-                  
-                </div>
-             
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="col-12 col-md-12 free">
+        <h1 class="free_font"> OUR FREEDOM FIGHTER </h1>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12" style="margin-top: 50px;">  <div class="row">
-        <div class=" col-12 col-sm-6 col-md-3">
-          <div class="card" style="width: 18rem;">
-            <img
-              src="https://images.news18.com/ibnlive/uploads/2022/03/bhagat-singh-16480122274x3.png?impolicy=website&width=640&height=480"
-              class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text name">Bhaght singh</p>
-              <div class="accordion accordion-flush" id="accordionFlushExample1">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                     About
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#One">
-                    <div class="accordion-body">
-        
-                        <div class="about-bhaght-singh">
-                            <div class="info">
-                              <h4 class="heading">Born</h4>
-                              <p class="para"> 27 September 1907
-                                Banga, Punjab, British India</p>
-                            </div>
-                            <div class="info">
-                              <h4 class="heading">Died</h4>
-                              <p class="para"> 23 March 1931 (aged 23)
-                                Lahore Central Jail, Punjab, British India</p>
-                            </div>
-          
-                            <div class="info">
-                              <h4 class="heading">Other names</h4>
-                              <p class="para">	Shaheed-e-Azam</p>
-                            </div>
-                            <div class="info">
-                              <h4 class="heading">Cause of death	</h4>
-                              <p class="para">	Execution by hanging</p>
-                            </div>
-                            <div class="info">
-                              <h4 class="heading">Movement	</h4>
-                              <p class="para">	Indian independence movement</p>
-                            </div>
-                            <div class="info">
-                              <h4 class="heading">Assassination</h4>
-                              <p class="para"> John P. Saunders and Channan Singh</p>
-                            </div>
-                            <div class="info">
-                              <h4 class="heading">Signature</h4>
-                              <div class="sinature"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Bhagat-singh-signature.jpg" alt="">
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Accomplishment            </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#One">
-                    <div class="accordion-body">  Bhagat Singh (27 September 1907 – 23 March 1931) was an Indian anti-colonial
-                        revolutionary,who participated in the mistaken murder of a junior British police officer in
-                        December 1928 in what was to be retaliation for the death of an Indian nationalist. He later
-                        took part in a largely symbolic bombing of the Central Legislative Assembly in Delhi and a
-                        hunger strike in jail, which—on the back of sympathetic coverage in Indian-owned
-                        newspapers—turned him into a household name in the Punjab region, and after his execution at
-                        age 23 into a martyr and folk hero in Northern India. Borrowing ideas from Bolshevism and
-                        anarchism, the charismatic Singh electrified a growing militancy in India in the 1930s, and
-                        prompted urgent introspection within the Indian National Congress's nonviolent but eventually
-                        successful campaign for India's independence</div>
-                  </div>
-                </div>
-                
-              </div>
-              
+
+    <div class="row" style="margin-top: 20px;">
+      <div class=" col-12 col-md-3 col"><img src="./1-removebg-preview.png" alt="" width="250px" height="300px"></div>
+      <div class=" col-12 col-md-8 col_2">
+        <h2 class="head">Bhaght singh</h2>
+        <h3 class="about" id="dn_2"> Accomplishment</h3>
+        <p class="about_2"> Bhagat Singh (27 September 1907 – 23 March 1931) was an Indian anti-colonial
+          revolutionary,who participated in the mistaken murder of a junior British police officer in
+          December 1928 in what was to be retaliation for the death of an Indian nationalist. He later
+          took part in a largely symbolic bombing of the Central Legislative Assembly in Delhi and a
+          hunger strike in jail, which—on the back of sympathetic coverage in Indian-owned
+          newspapers—turned him into a household name in the Punjab region, and after his execution at
+          age 23 into a martyr and folk hero in Northern India. Borrowing ideas from Bolshevism and
+          anarchism, the charismatic Singh electrified a growing militancy in India in the 1930s, and
+          prompted urgent introspection within the Indian National Congress's nonviolent but eventually
+          successful campaign for India's independence</p>
+
+        <h3 class="about" id="dn">About</h3>
+        <div class="about-bhaght-singh">
+          <div class="info">
+            <h4 class="heading">Born</h4>
+            <p class="para"> 27 September 1907
+              Banga, Punjab, British India</p>
+          </div>
+          <div class="info">
+            <h4 class="heading">Died</h4>
+            <p class="para"> 23 March 1931 (aged 23)
+              Lahore Central Jail, Punjab, British India</p>
+          </div>
+
+          <div class="info">
+            <h4 class="heading">Other names</h4>
+            <p class="para"> Shaheed-e-Azam</p>
+          </div>
+          <div class="info">
+            <h4 class="heading">Cause of death </h4>
+            <p class="para"> Execution by hanging</p>
+          </div>
+          <div class="info">
+            <h4 class="heading">Movement </h4>
+            <p class="para"> Indian independence movement</p>
+          </div>
+          <div class="info">
+            <h4 class="heading">Assassination</h4>
+            <p class="para"> John P. Saunders and Channan Singh</p>
+          </div>
+          <div class="info">
+            <h4 class="heading">Signature</h4>
+            <div class="sinature"> <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Bhagat-singh-signature.jpg" alt="">
             </div>
           </div>
         </div>
 
-        <div class=" col-12 col-sm-6 col-md-3">
-          <div class="card" style="width: 18rem;">
-            <img
-              src="https://mc-webpcache.readwhere.in/mcms.php?size=large&in=https://mcmscache.epapr.in/post_images/website_326/post_26480118/full.jpg"
-              class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text name">Netaji</p>
-         
-              <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#Two">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#Two">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                  </div>
-                </div>
-               
-              </div>
-            </div>
+
+      </div>
+    </div>
+
+    <!-- second row -->
+    <div class="row" style="margin-top: 10px;">
+      <div class="col-12 col-md-3 row_2_col"><img src="./3.png" alt=""></div>
+      <div class="col-12 col-md-8 row_2_col_2">
+        <h2 class="head_2">V. O. Chidambaram Pillai</h2>
+        <h3 class="about_f2"> Accomplishment</h3>
+        <p class="about_2s" id="f2"> Vallinayagam Olaganathan Chidambaram Pillai (5 September 1872 - 18 November 1936)
+          was an Indian freedom fighter, lawyer, businessman and politician. He founded the Swadeshi Steam Navigation
+          Company in 1906 to compete against the monopoly of the British India Steam Navigation Company (BISNC). He
+          launched the first indigenous Indian shipping service between Tuticorin in British India and Colombo in
+          Ceylon. Once a member of the Indian National Congress, he was later charged with sedition by the British
+          government and sentenced to life imprisonment, and his barrister license was revoked. He is known by the
+          epithet Kappalottiya Tamizhan ("Tamil helmsman"). Tuticorin Port Trust, one of India's thirteen major ports,
+          is named after him</p>
+
+        <h3 class="about_f">About</h3>
+        <div class="about-bhaght-singh_2">
+          <div class="info">
+            <h4 class="heading">Born</h4>
+            <p class="para"> 27 September 1907
+              Vallinayagam Olaganathan Chidambaram Pillai
+              5 September 1872</p>
           </div>
+          <div class="info">
+            <h4 class="heading">Died</h4>
+            <p class="para"> 18 November 1936 (aged 64)
+              Thoothukudi, British IndiaIndia</p>
+          </div>
+
+          <div class="info">
+            <h4 class="heading">Other names</h4>
+            <p class="para"> Kappal Ottiya Tamilzhan</p>
+          </div>
+
+          <div class="info">
+            <h4 class="heading">Movement </h4>
+            <p class="para"> Indian independence movement</p>
+          </div>
+          <div class="info">
+            <h4 class="heading">Spouse</h4>
+            <p class="para"> Meenakshi</p>
+          </div>
+
         </div>
 
-        <div class=" col-12 col-sm-6 col-md-3">
-          <div class="card" style="width: 18rem;">
-            <img src="https://i.pinimg.com/originals/9b/38/67/9b3867d4ce499ab17e6070b7076c2843.jpg"
-              class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text name">Khudiram Bose</p>
-              <div class="accordion accordion-flush" id="accordionFlushExample1">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                     About
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#One">
-                    <div class="accordion-body">
-        
-                        <div class="about-bhaght-singh">
-                            <div class="info">
-                              <h4 class="heading">Born</h4>
-                              <p class="para"> 27 September 1907
-                                Banga, Punjab, British India</p>
-                            </div>
-                            <div class="info">
-                              <h4 class="heading">Died</h4>
-                              <p class="para"> 23 March 1931 (aged 23)
-                                Lahore Central Jail, Punjab, British India</p>
-                            </div>
-          
-                            <div class="info">
-                              <h4 class="heading">Other names</h4>
-                              <p class="para">	Shaheed-e-Azam</p>
-                            </div>
-                            <div class="info">
-                              <h4 class="heading">Cause of death	</h4>
-                              <p class="para">	Execution by hanging</p>
-                            </div>
-                            <div class="info">
-                              <h4 class="heading">Movement	</h4>
-                              <p class="para">	Indian independence movement</p>
-                            </div>
-                            <div class="info">
-                              <h4 class="heading">Assassination</h4>
-                              <p class="para"> John P. Saunders and Channan Singh</p>
-                            </div>
-                            <div class="info">
-                              <h4 class="heading">Signature</h4>
-                              <div class="sinature"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Bhagat-singh-signature.jpg" alt="">
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Accomplishment            </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#One">
-                    <div class="accordion-body">  
-                      Khudiram Bose (also spelled Khudiram/Khudiram Basu) (3 December 1889 – 11 August 1908) was an Indian
-                        nationalist from Bengal Presidency who opposed British rule of India. For his role in the Muzaffarpur
-                        Conspiracy Case, along with Prafulla Chaki, he was sentenced to death, for the attempted assassination
-                        of a British judge, Magistrate Douglas Kingsford, by throwing bombs on the carriage they suspected the
-                        man was in. Magistrate Kingsford, however, was seated in a different carriage, and the throwing of
-                        bombs resulted in the deaths of two British women. Prafulla fatally shot himself before the arrest.
-                        Khudiram was arrested and trialed for the murder of the two women, ultimately being sentenced to
-                        death. He was one of the first Indian revolutionaries in Bengal to be executed by the British.</div>
-                  </div>
-                </div>
-                
-              </div>
-              
-            </div>
+      </div>
+    </div>
+
+
+
+    <!-- third row -->
+    <div class="row" style="margin-top: 10px;">
+      <div class="col-12 col-md-3 row_3_col"><img src="./5.png" alt="" width="250px" height="300px"></div>
+      <div class="col-12 col-md-8 row_3_col_2">
+        <h2 class="head_2">
+          Sarvepalli Radhakrishnan</h2>
+        <h3 class="about_f3"> Accomplishment</h3>
+        <p class="about_3s" id="f3">Sarvepalli Radhakrishnan (5 September 1888 – 17 April 1975; natively
+          Radhakrishnayya) was an Indian politician, philosopher and statesman who served as the second president of
+          India from 1962 to 1967. He previously served as the first vice president of India from 1952 to 1962. He was
+          the second ambassador of India to the Soviet Union from 1949 to 1952. He was also the fourth vice-chancellor
+          of Banaras Hindu University from 1939 to 1948 and the second vice-chancellor of Andhra University from 1931 to
+          1936. Radhakrishnan is considered one of the most influential and distinguished 20th century scholars of
+          comparative religion and philosophy, he held the King George V Chair of Mental and Moral Science at the
+          University of Calcutta from 1921 to 1932 and Spalding Chair of Eastern Religion and Ethics at University of
+          Oxford from 1936 to 1952</p>
+
+        <h3 class="about_3">About</h3>
+        <div class="about-bhaght-singh_3">
+          <div class="info">
+            <h4 class="heading">Born</h4>
+            <p class="para"> 17 April 1975 (aged 86)
+              Madras, Tamil Nadu, India</p>
           </div>
-        </div>
-        <div class=" col-12 col-sm-6 col-md-3">
-          <div class="card" style="width: 18rem;">
-            <img
-              src="https://static.abplive.com/wp-content/uploads/2018/07/23091131/prabhu.jpg?impolicy=abp_cdn&imwidth=1200"
-              class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text name">Balraj</p>
-              <div class="accordion accordion-flush" id="accordionFlushExample1">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                     About
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#One">
-                    <div class="accordion-body">
-        
-                        <div class="about-bhaght-singh">
-                            <div class="info">
-                              <h4 class="heading">Born</h4>
-                              <p class="para"> 27 September 1907
-                                Banga, Punjab, British India</p>
-                            </div>
-                            <div class="info">
-                              <h4 class="heading">Died</h4>
-                              <p class="para"> 23 March 1931 (aged 23)
-                                Lahore Central Jail, Punjab, British India</p>
-                            </div>
-          
-                            <div class="info">
-                              <h4 class="heading">Other names</h4>
-                              <p class="para">	Shaheed-e-Azam</p>
-                            </div>
-                            <div class="info">
-                              <h4 class="heading">Cause of death	</h4>
-                              <p class="para">	Execution by hanging</p>
-                            </div>
-                            <div class="info">
-                              <h4 class="heading">Movement	</h4>
-                              <p class="para">	Indian independence movement</p>
-                            </div>
-                            <div class="info">
-                              <h4 class="heading">Assassination</h4>
-                              <p class="para"> John P. Saunders and Channan Singh</p>
-                            </div>
-                            <div class="info">
-                              <h4 class="heading">Signature</h4>
-                              <div class="sinature"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Bhagat-singh-signature.jpg" alt="">
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Accomplishment            </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#One">
-                    <div class="accordion-body">  
-                      Chandra Shekhar Sitaram Tiwari ( 23 July 1906 – 27 February 1931), popularly known as Chandra Shekhar
-                      Azad, was an Indian revolutionary who reorganised the Hindustan Republican Association (HRA) under its
-                      new name of Hindustan Socialist Republican Association (HSRA) after the death of its founder, Ram
-                      Prasad Bismil, and three other prominent party leaders, Roshan Singh, Rajendra Nath Lahiri and
-                      Ashfaqulla Khan. He hailed from Bardarka village in Unnao district of United Provinces and his parents
-                      were Sitaram Tiwari and Jagrani Devi. He often used the pseudonym "Balraj" while signing pamphlets
-                      issued as the commander-in-chief of the HSRA.</div>
-                  </div>
-                </div>
-                
-              </div>
-           
-            </div>
+          <div class="info">
+            <h4 class="heading">Died</h4>
+            <p class="para"> 18 November 1936 (aged 64)
+              Thoothukudi, British IndiaIndia</p>
           </div>
+
+          <div class="info">
+            <h4 class="heading">Other names</h4>
+            <p class="para">Gopal</p>
+          </div>
+
+          <div class="info">
+            <h4 class="heading">Movement </h4>
+            <p class="para">Prime Minister india</p>
+          </div>
+          <div class="info">
+            <h4 class="heading">Spouse</h4>
+            <p class="para"> Sarvepalli Sivakamu
+              ​
+              ​(m. 1903; died 1956)</p>
+          </div>
+
         </div>
-      </div></div>
+
+      </div>
+    </div>
+
+
+
+    <!-- fourth row -->
+    <div class="row" style="margin-top: 10px;">
+      <div class="col-12 col-md-3 row_4_col"><img src="./7.png" alt="" width="250px" height="300px"></div>
+      <div class="col-12 col-md-8 row_4_col_2">
+        <h2 class="head_2">
+          Jawaharlal Nehru</h2>
+        <h3 class="about_f4"> Accomplishment</h3>
+        <p class="about_4s" id="f4">Jawaharlal Nehru (Hindi: 14 November 1889 – 27 May 1964) was an Indian anti-colonial
+          nationalist, secular humanist, social democrat, author and statesman who was a central figure in India during
+          the middle of the 20th century. Nehru was a principal leader of the Indian nationalist movement in the 1930s
+          and 1940s. Upon India's independence in 1947, he served as the country's first prime minister for 16
+          years.Nehru promoted parliamentary democracy, secularism, and science and technology during the 1950s,
+          powerfully influencing India's arc as a modern nation. In international affairs, he steered India clear of the
+          two blocs of the Cold War. A well-regarded author, the books he wrote in prison, such as Letters from a Father
+          to His Daughter (1929), An Autobiography (1936) and The Discovery of India (1946), have been read and
+          deliberated upon around the world.</p>
+
+        <h3 class="about_4">About</h3>
+        <div class="about-bhaght-singh_4">
+          <div class="info">
+            <h4 class="heading">Born</h4>
+            <p class="para"> 14 November 1889
+              Allahabad, North-Western Provinces, British India</p>
+          </div>
+          <div class="info">
+            <h4 class="heading">Died</h4>
+            <p class="para"> 27 May 1964 (aged 74)
+              New Delhi, Delhi, India</p>
+          </div>
+
+          <div class="info">
+            <h4 class="heading">Other names</h4>
+            <p class="para">chacha Nehru</p>
+          </div>
+
+          <div class="info">
+            <h4 class="heading">Movement </h4>
+            <p class="para">Prime Minister india</p>
+          </div>
+          <div class="info">
+            <h4 class="heading">Spouse</h4>
+            <p class="para"> Kamala Kaul</p>
+          </div>
+
+        </div>
+
+      </div>
     </div>
   </div>
+
+
+  <!-- card_div -->
+
+
+<div class="album">
+<div class="card_2">
+  <div class="img_1"></div>
+</div>
+<div class="card_2">
+  <div class="img_2"></div>
+</div>
+<div class="card_2">
+  <div class="img_3"></div>
+</div>
+<div class="card_2">
+  <div class="img_4"></div>
+</div>
+<div class="card_2">
+  <div class="img_5"></div>
+</div>
+<div class="card_2">
+  <div class="img_6"></div>
+</div>
+
+</div>
+
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a id="kamo" href="#" class="nav-link px-2 text-body-light">Home</a></li>
+      <li class="nav-item"><a id="kamo" href="#" class="nav-link px-2 text-body-light">Features</a></li>
+      <li class="nav-item"><a id="kamo" href="#" class="nav-link px-2 text-body-light">Pricing</a></li>
+      <li class="nav-item"><a id="kamo" href="#" class="nav-link px-2 text-body-light">FAQs</a></li>
+      <li class="nav-item"><a id="kamo" href="#" class="nav-link px-2 text-body-light">About</a></li>
+    </ul>
+    <p class="text-center text-body-secondary"><p style="color: white; text-align: center;">© 2024 Company, Inc</p></p>
+  </footer>
+</div>
+
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <!-- script-1 -->
+  <script>
+    $(document).ready(function () {
+      $("#dn").click(function () {
+        $(".about-bhaght-singh").toggle();
+      })
+      $("#dn_2").click(function () {
+        $(".about_2").toggle();
+      })
+
+    })
+  </script>
+  \ <!-- script-2 -->
+  <script>
+    $(document).ready(function () {
+      $(".about_f").click(function () {
+        $(".about-bhaght-singh_2").toggle();
+      })
+      $(".about_f2").click(function () {
+        $("#f2").toggle();
+      })
+
+    })
+  </script>
+  <!-- script-3 -->
+  <script>
+    $(document).ready(function () {
+      $(".about_3").click(function () {
+        $(".about-bhaght-singh_3").toggle();
+      })
+      $(".about_f3").click(function () {
+        $("#f3").toggle();
+      })
+
+    })
+  </script>
 
 
+  <!-- script-4 -->
+  <script>
+    $(document).ready(function () {
+      $(".about_4").click(function () {
+        $(".about-bhaght-singh_4").toggle();
+      })
+      $(".about_f4").click(function () {
+        $("#f4").toggle();
+      })
+
+    })
+  </script>
+
+  </div>
 </body>
 
 </html>

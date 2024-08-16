@@ -1,59 +1,524 @@
-body{
-   
-    height: 3000px;
-  }
-  .container{
-    color: transparent;
-  }
-.slider{
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  height: 3000px;
+
+}
+
+.container {
+  color: transparent;
+  background-color: black;
+
+}
+
+.slider {
   margin-top: 30px;
   height: 500px;
 }
-.first_poster_text{
+
+.first_poster_text {
   /* color: rgb(249, 251, 247); */
   font-size: 25px;
   font-weight: bold;
-color: transparent;
-font-family: "Anton", sans-serif;
+  color: transparent;
+  font-family: "Anton", sans-serif;
 
 }
-.back{
-background-image: url(https://wallpapers.com/images/hd/old-beaten-indian-flag-go8hkn52v6whyc4h.jpg);
-background-size: cover; 
-background-clip: text;
--webkit-background-clip: text;
--moz-background-clip: text;
+
+.back {
+  background-image: url(https://wallpapers.com/images/hd/old-beaten-indian-flag-go8hkn52v6whyc4h.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
 
 }
-.h1{
-color: black;
+
+.free {
+  color: rgb(242, 247, 247);
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
-.name{
-font-size: 25px;
-font-weight: bold;
-color: rgb(238, 157, 8);
+
+.free_font {
+  width: 570px;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+  background-image: url(https://img.freepik.com/free-vector/15th-august-indian-independence-day-tricolor-flag-theme-background_1035-27307.jpg);
+  background-size: 100% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
 }
+
+.name {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(238, 157, 8);
+}
+
+.about-bhaght-singh {
+  color: white;
+
+}
+
 .info {
-width: 100%;
-margin-bottom: 15px;
-border-bottom: 1px solid gray;
+  width: 100%;
+  margin-bottom: 15px;
+  border-bottom: 1px solid gray;
 }
-.info > .heading{
-margin: 0px;
-text-align: center;
-width: 100%;
-/* border: 1px solid black; */
-margin-bottom: 10px;
+
+.info>.heading {
+  margin: 0px;
+  text-align: center;
+  width: 100%;
+  /* border: 1px solid black; */
+  margin-bottom: 10px;
 }
-.info > .para{
+
+.info>.para {
   margin: 0px;
   margin-bottom: 25px;
-  }
+}
 
-.info > .sinature {
+.info>.sinature {
   height: 80px;
   width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 25px;
 }
+
+.col {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgb(241, 231, 231); */
+
+}
+
+.col_2 {
+  /* border: 1px solid white; */
+  height: 475px;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: black;
+}
+
+.col_2::-webkit-scrollbar {
+  display: none;
+}
+
+
+.about {
+  color: white;
+  /* margin-top: 50px; */
+}
+
+.about_2 {
+  color: white;
+  /* display: none; */
+
+}
+
+.about-bhaght-singh {
+  display: none;
+}
+
+.head {
+  color: transparent;
+  height: 100px;
+  margin-top: 20px;
+  width: 330px;
+  font-size: 50px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  background-image: url(https://img.freepik.com/premium-photo/symbol-pride-unity-indian-flag-soaring-waves-smoke_1086710-243.jpg);
+  background-size: 100% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
+/* second row */
+.about-bhaght-singh_2 {
+  color: white;
+  display: none;
+}
+
+.head_2 {
+  color: transparent;
+  height: 100px;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 50px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  background-image: url(https://img.freepik.com/premium-photo/symbol-pride-unity-indian-flag-soaring-waves-smoke_1086710-243.jpg);
+  background-size: 100% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+}
+
+
+.row_2_col {
+  height: 475px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid white; */
+
+}
+
+.row_2_col_2 {
+  height: 475px;
+  /* border: 1px solid white; */
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.row_2_col_2::-webkit-scrollbar {
+  display: none;
+}
+
+.about_f {
+  color: white;
+  margin-top: 50px;
+}
+
+.about_f2 {
+  color: white;
+  /* margin-top: 50px; */
+
+}
+
+.about_2s {
+  color: white;
+  /* display:none; */
+}
+
+/* third row */
+
+
+.row_3_col {
+  height: 475px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid white; */
+
+}
+
+.row_3_col_2 {
+  height: 475px;
+  /* border: 1px solid white; */
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.row_3_col_2::-webkit-scrollbar {
+  display: none;
+}
+
+.about_3 {
+  color: white;
+  margin-top: 50px;
+}
+
+.about_f3 {
+  color: white;
+  /* margin-top: 50px; */
+
+}
+
+.about_3s {
+  color: white;
+  /* display:none; */
+}
+
+.about-bhaght-singh_3 {
+  color: white;
+  display: none;
+}
+
+
+/* fourth row */
+
+.row_4 {
+  background-color: black;
+  /* border: 1px solid white; */
+
+}
+
+.row_4_col {
+  height: 475px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid white; */
+
+}
+
+.row_4_col_2 {
+  height: 475px;
+  /* border: 1px solid white; */
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.row_4_col_2::-webkit-scrollbar {
+  display: none;
+}
+
+.about_4 {
+  color: white;
+  margin-top: 50px;
+}
+
+.about_f4 {
+  color: white;
+  /* margin-top: -10px; */
+
+}
+
+.about_4s {
+  color: white;
+  /* display:none; */
+
+
+}
+
+.about-bhaght-singh_4 {
+  color: white;
+  display: none;
+}
+
+.slider-img {
+
+  width: 100%;
+}
+
+.card_col {
+  border: 1px solid white;
+}
+
+/* slider */
+.album {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  overflow: hidden;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+
+.card_2 {
+  height: 500px;
+  flex: 1;
+  cursor: pointer;
+  transition: 1s all ease-in-out;
+}
+
+.card_2:hover {
+  height: 600px;
+  flex: 8;
+}
+
+.img_1 {
+  height: 100%;
+  width: 100%;
+  background-image: url("./40\ Beautiful\ Indian\ Independence\ Day\ Wallpapers\ and\ Greeting\ cards\ -\ HD.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img_2 {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://i.pinimg.com/originals/fa/03/6c/fa036cd062132391e81f75715335d209.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img_3 {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/202201/army_2_1200x768.jpeg?size=1200:675");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img_4 {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://preview.redd.it/m5z1kv557y281.jpg?width=1080&crop=smart&auto=webp&s=df6708de086b03b298958b86406b903904fe3571");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img_5 {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://www.aljazeera.com/wp-content/uploads/2024/01/AP24026310694877-1706264972.jpg?resize=1170%2C780&quality=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img_6 {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://im.rediff.com/news/2019/jan/26r-day6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#kamo{
+  color: white;
+}
+#kamo_2{
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quarry */
+@media (width <=500px) {
+
+  .head {
+    color: transparent;
+    height: 100px;
+    margin-top: 20px;
+    width: 330px;
+    font-size: 40px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background-image: url(https://img.freepik.com/premium-photo/symbol-pride-unity-indian-flag-soaring-waves-smoke_1086710-243.jpg);
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+  }
+
+  .head_2 {
+    font-size: 31px;
+  }
+
+  .col_2 {
+    /* border: 1px solid white; */
+    height: 170px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+
+  .row_2_col_2 {
+    height: 170px;
+    /* border: 1px solid white; */
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .row_3_col_2 {
+    height: 170px;
+    /* border: 1px solid white; */
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .row_4_col_2 {
+    height: 170px;
+    /* border: 1px solid white; */
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .slider {
+    margin-top: 30px;
+    height: 250px;
+  }
+
+  .slider-img {
+    height: 250px;
+    width: 100%;
+  }
+
+  .free_font {
+    font-size: 30px;
+    border: none;
+  }
+
+  .about_2 {
+    color: white;
+    display: none;
+
+  }
+
+  .about_2s {
+    color: white;
+    display: none;
+  }
+
+  .about_3s {
+    color: white;
+    display: none;
+  }
+
+  .about_4s {
+    color: white;
+    display: none;
+  }
+
+.album {
+  width: 100%;
+  height: 650px;
+  border: 1px solid rgb(240, 13, 13);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+
+}
+
