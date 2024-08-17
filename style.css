@@ -15,6 +15,25 @@ body {
   background-color: black;
 
 }
+.love{
+  color: white;
+  /* text-align: center; */
+
+}
+.love_2{
+  font-size:7rem;
+  letter-spacing: 4px;
+  font-family: fantasy;
+  font-weight: 900;
+  border-bottom: 1px solid white;
+
+  background-image: url(https://i.pinimg.com/736x/ea/c3/2a/eac32aea89bb95e11e3e79e5053b5285.jpg);
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+}
 
 .slider {
   margin-top: 30px;
